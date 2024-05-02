@@ -1,6 +1,15 @@
 
 {% extends 'base.html' %} 
 
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/chatGui.css' %}">
+
+{% endblock %}
+
+
+
 
 {%block content%}
 <div class="d-flex h-100">
@@ -37,6 +46,11 @@
         </div>
     </div>
 </div>
+
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'js/chatGui.js' %}"></script>
 
 {% endblock %}
 
